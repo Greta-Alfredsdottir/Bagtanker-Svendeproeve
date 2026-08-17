@@ -1,31 +1,31 @@
 import { useState } from 'react';
 import style from './slider.module.scss'
-import sliderImage1 from '../../assets/sliderImages/apartment-1.png'
-import sliderImage2 from '../../assets/sliderImages/apartment-2.png'
-import sliderImage3 from '../../assets/sliderImages/apartment-3.png'
+import SliderImage1 from '../../assets/SliderImages/image-1.png'
+import SliderImage2 from '../../assets/SliderImages/image-2.png'
+import SliderImage3 from '../../assets/SliderImages/image-3.png'
 
 
 export function Slider(){
     const [sliderIndex, setSliderIndex] = useState(0);
     // Billeder skal i et array
     // Back and forth knap
-    const sliderImages =[sliderImage1,sliderImage2,sliderImage3];
+    const SliderImages =[SliderImage1,SliderImage2,SliderImage3];
     
     function forward(){
-        if (sliderIndex >= sliderImages, length){
+        if (sliderIndex >= SliderImages, length){
             setSliderIndex(0)
         }   else setSliderIndex(prev => prev + 1)
     }
 
     function back(){
         if (sliderIndex === 0){
-            setSliderIndex(sliderImages.length -1)
+            setSliderIndex(SliderImages.length -1)
         }   else setSliderIndex((prev) => prev -1)
     }
 
     return(
         <figure className={style.sliderStyle}>
-            <img src={sliderImages[sliderIndex]} />
+            <img src={SliderImages[sliderIndex]} />
             <figcaption>
             <button onClick={() => back()}>Previous</button>
             <button onClick={() => forward()}>Next</button>
