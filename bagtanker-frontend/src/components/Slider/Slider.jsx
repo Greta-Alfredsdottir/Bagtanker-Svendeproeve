@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import style from './slider.module.scss'
-import sliderImage1 from '../../assets/sliderImages/apartment-1.jpg'
-import sliderImage2 from '../../assets/sliderImages/apartment-2.jpg'
-import sliderImage3 from '../../assets/sliderImages/apartment-3.jpg'
+import sliderImage1 from '../../assets/sliderImages/apartment-1.png'
+import sliderImage2 from '../../assets/sliderImages/apartment-2.png'
+import sliderImage3 from '../../assets/sliderImages/apartment-3.png'
 
 
 export function Slider(){
@@ -19,7 +19,7 @@ export function Slider(){
 
     function back(){
         if (sliderIndex === 0){
-            setSliderIndex(sæiderImages.length -1)
+            setSliderIndex(sliderImages.length -1)
         }   else setSliderIndex((prev) => prev -1)
     }
 
