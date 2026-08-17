@@ -1,4 +1,4 @@
-import { Slider } from "../Components/slider/slider";
+import { Slider } from "../Komponents/slider/slider";
 
 
 export function Frontpage(){
