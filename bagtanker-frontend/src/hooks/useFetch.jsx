@@ -1,4 +1,4 @@
-import { EstateCard } from "../Components/estateCard/EstateCard";
+import { ProduktCard } from "../Components/estateCard/EstateCard";
 import { Slider } from "../Components/slider/slider";
 import { useFetch } from "../hooks/useFetch";
 

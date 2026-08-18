@@ -9,6 +9,11 @@ Eventuelt brugernavn og adgangskode
 
 
 Vurdering af egen indsats og gennemførelse af prøven.
+    Mandag: Projekt-setup og arkitektur. startet at kode lidt.
+    Tirsdag:
+    Onsdag:
+    Torsdag:
+    Fredag: 
 Argumentation for de valg du har truffet under løsningen af opgaven.
 Redegørelse for oprindelsen af de forskellige kodeelementer i prøven.
 Fremhævelse af eventuelle særlige punkter til bedømmelse.

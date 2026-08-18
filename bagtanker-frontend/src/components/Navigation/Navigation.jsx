@@ -13,12 +13,12 @@ export function Navigation() {
         <li>
           <NavLink to={"/"}>Forside</NavLink>
         </li>
-        {/* <li>
+        /* <li>
           <NavLink to={"/"}></NavLink>
         </li>
         <li>
-          <NavLink to={"/"}></NavLink>
-        </li> */}
+          <NavLink to={"/Contact"}>Kontakt</NavLink>
+        </li> */
         <li>
           <NavLink to={"/login"}>Login</NavLink>
         </li>
