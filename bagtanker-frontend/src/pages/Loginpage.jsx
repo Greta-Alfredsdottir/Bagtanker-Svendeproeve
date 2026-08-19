@@ -1,4 +1,4 @@
-export function Loginpage(){
+export function LoginPage(){
     const Login = async (e) => {
         e.preventDefault();
         const username = e.target.username.value;

@@ -1,23 +1,22 @@
-
-
-export function ProductCard({Title, Images, price}) {
+export function ProductCard({ Title, Images, price }) {
 
     function getImage(imageArray) {
-        const Image = imageArray.filter((item) => 
-        item.image.description.includes(''),
-    );
-        return Image
+        const image = imageArray?.filter((item) =>
+            item.image?.description?.includes('')
+        );
+
+        return image;
     }
-    
+
     const image = getImage(Images);
-    
-        return(
+
+    return (
         <div>
             <figure>
-                <img src={image[0]?.image.filename}></img>
+                <img src={image?.[0]?.image?.filename} />
             </figure>
-           
-            <h4> {price} DKK</h4>
+
+            <h4>{price} DKK</h4>
         </div>
-    )
+    );
 }

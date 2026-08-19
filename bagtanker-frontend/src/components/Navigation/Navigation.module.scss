@@ -25,3 +25,24 @@
         }
     }
 }
+.burgerBtn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 0.25rem;
+
+  &:hover .burgerIcon {
+    background-color: #d97706;
+  }
+}
+
+.burgerIcon {
+  width: 24px;
+  height: 3px;
+  background-color: #374151;
+  border-radius: 2px;
+  transition: background-color 0.2s ease;
+}

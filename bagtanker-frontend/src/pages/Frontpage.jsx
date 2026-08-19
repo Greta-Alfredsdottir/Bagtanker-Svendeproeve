@@ -5,7 +5,7 @@ import { ProductCard } from "../productCard/ProductCard";
 
 
 
-export function Frontpage(){
+export function FrontPage(){
 
     const {data, isLoading, error} = useFetch(import.meta.env.VITE_PUBLIC_BASE_URL + '/api/Products')
 
