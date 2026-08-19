@@ -1,6 +1,8 @@
 // import { EstateCard } from "../Components/estateCard/EstateCard";
 import { Slider } from "../Components/slider/slider";
 import { useFetch } from "../hooks/useFetch";
+import { ProductCard } from "../productCard/ProductCard";
+
 
 
 export function Frontpage(){
@@ -17,14 +19,10 @@ export function Frontpage(){
 
             return (
                 <ProductCard
-                address={item.address}
-                city={item.city}
-                energyLabel={item.energyLabel}
-                estateImages={item.estateImages}
-                numRooms={item.numRooms}
-                floorSpace={item.floorSpace}
+                Title={item.title}
+                Images={item.Images}
                 price={item.price}
-                type={item.type}
+                
                 />
                 
             );

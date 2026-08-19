@@ -1,30 +1,22 @@
 
 
-export function ProductCard({address, city, energyLabel, estateImages, numRooms, floorSpace, price, type}) {
+export function ProductCard({Title, Images, price}) {
 
-    function getVillaImage(imageArray) {
-        const villaImage = imageArray.filter((item) => 
-        item.image.description.includes('Villa'),
+    function getImage(imageArray) {
+        const Image = imageArray.filter((item) => 
+        item.image.description.includes(''),
     );
-        return villaImage
+        return Image
     }
     
-    const villa = getVillaImage(estateImages);
-    console.log("villa:", villa[0])
+    const image = getImage(Images);
+    
         return(
         <div>
             <figure>
-                <img src={villa[0]?.image.filename}></img>
+                <img src={image[0]?.image.filename}></img>
             </figure>
-            <section>
-                <span> 
-                    <h5>{address}</h5> <p>{energyLabel.name}</p> 
-                </span>
-                <p>{`${city.name} ${city.zipcode}`}</p>
-                <p> {type.name} </p>
-                <p> {`${numRooms}, ${floorSpace}`} </p>
-                <p> {} </p>
-            </section>
+           
             <h4> {price} DKK</h4>
         </div>
     )

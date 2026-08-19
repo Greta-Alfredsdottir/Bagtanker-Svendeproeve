@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import style from './slider.module.scss'
-import SliderImage1 from '../../assets/SliderImages/image-1.png'
-import SliderImage2 from '../../assets/SliderImages/image-2.png'
-import SliderImage3 from '../../assets/SliderImages/image-3.png'
+import Image from '../../assets/slides/bread-slidebg-01.jpg';
+import Image from '../../assets/slides/bread-slidebg-02.jpg';
+import Image from '../../assets/slides/bread-slidebg-03.jpg'
 
 
 export function Slider(){
