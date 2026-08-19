@@ -1,4 +1,4 @@
-import styles from './burger.module.scss';
+import style from "./burger.module.scss"; 
 
 export default function BurgerMenu({
   isOpen,
@@ -8,23 +8,23 @@ export default function BurgerMenu({
   if (!isOpen) return null;
 
   return (
-    <div className={styles.drawerOverlay} onClick={onClose}>
+    <div className={style.drawerOverlay} onClick={onClose}>
       <div
-        className={styles.drawer}
+        className={style.drawer}
         onClick={(e) => e.stopPropagation()}
       >
-        <div className={styles.drawerHeader}>
+        <div className={style.drawerHeader}>
           <h2>Menu</h2>
 
           <button
-            className={styles.closeBtn}
+            className={style.closeBtn}
             onClick={onClose}
           >
             ✕
           </button>
         </div>
 
-        <nav className={styles.drawerNav}>
+        <nav className={style.drawerNav}>
           <Link href="/" onClick={onClose}>
             Forside
           </Link>
@@ -33,15 +33,11 @@ export default function BurgerMenu({
             Produkter
           </Link>
 
-          {isLoggedIn ? (
-            <Link href="/min-side" onClick={onClose}>
-              Min Side
-            </Link>
-          ) : (
+           (
             <Link href="/Login" onClick={onClose}>
               Login
             </Link>
-          )}
+          )
         </nav>
       </div>
     </div>
