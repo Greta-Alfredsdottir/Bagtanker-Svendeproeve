@@ -5,7 +5,7 @@ import { useFetch } from "../hooks/useFetch";
 
 export function Frontpage(){
 
-    const {data, isLoading, error} = useFetch(import.meta.env.VITE_PUBLIC_BASE_URL + '/api/estates')
+    const {data, isLoading, error} = useFetch(import.meta.env.VITE_PUBLIC_BASE_URL + '/api/Products')
 
 
         console.log(data);
@@ -16,7 +16,7 @@ export function Frontpage(){
         {data?.map((item) =>{
 
             return (
-                <EstateCard
+                <ProductCard
                 address={item.address}
                 city={item.city}
                 energyLabel={item.energyLabel}

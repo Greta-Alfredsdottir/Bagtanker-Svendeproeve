@@ -1,34 +1,30 @@
-import { ProduktCard } from "../Components/estateCard/EstateCard";
-import { Slider } from "../Components/slider/slider";
-import { useFetch } from "../hooks/useFetch";
+import { useEffect, useState } from "react";
 
+export function useFetch(url) {
+    const [data, setData] = useState(null);  
+    const [error, setError] = useState(null);
+    const [isLoading, setIsLoading] = useState(false);
 
-export function Frontpage(){
+    useEffect(() => {
+        const getData = async () => {
+            setIsLoading(true)
+        try { 
 
-    const {data, isLoading, error} = useFetch(import.meta.env.VITE_PUBLIC_BASE_URL + '/api/estates')
-
-
-        console.log(data);
-        
-    return(
-        <>
-        <Slider />;
-        {data?.map((item) =>{
-
-            return (
-                <EstateCard
-                address={item.address}
-                city={item.city}
-                energyLabel={item.energyLabel}
-                estateImages={item.estateImages}
-                numRooms={item.numRooms}
-                floorSpace={item.floorSpace}
-                price={item.price}
-                type={item.type}
-                />
-                
-            );
-        } )}   
-       </>
-    );
+            const res = await fetch(url)
+            if (!res.ok){
+                throw new Error('Failed to fetch: ' + res.status)
+            }
+            const json = await res.json()
+            setData(json)
+        }
+        catch(err) {
+            setError (err)
+        }
+        finally {
+            setIsLoading(false)
+        }
+    }   
+    getData()
+},[url])
+return {data, isLoading, error}
 }

@@ -1,6 +1,6 @@
 
 
-export function ProduktCard({address, city, energyLabel, estateImages, numRooms, floorSpace, price, type}) {
+export function ProductCard({address, city, energyLabel, estateImages, numRooms, floorSpace, price, type}) {
 
     function getVillaImage(imageArray) {
         const villaImage = imageArray.filter((item) => 
