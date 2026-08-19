@@ -1,4 +1,5 @@
-import style from "./burger.module.scss"; 
+import { NavLink } from "react-router";
+import style from "./burger.module.scss";
 
 export default function BurgerMenu({
   isOpen,
@@ -11,8 +12,7 @@ export default function BurgerMenu({
     <div className={style.drawerOverlay} onClick={onClose}>
       <div
         className={style.drawer}
-        onClick={(e) => e.stopPropagation()}
-      >
+        onClick={(e) => e.stopPropagation()}>
         <div className={style.drawerHeader}>
           <h2>Menu</h2>
 
@@ -25,19 +25,18 @@ export default function BurgerMenu({
         </div>
 
         <nav className={style.drawerNav}>
-          <Link href="/" onClick={onClose}>
+          <NavLink to="/" onClick={onClose}>
             Forside
-          </Link>
+          </NavLink>
 
-          <Link href="/Produkter" onClick={onClose}>
+          <NavLink to="/Produkter" onClick={onClose}>
             Produkter
-          </Link>
+          </NavLink>
 
-           (
-            <Link href="/Login" onClick={onClose}>
+          <NavLink to="/Login" onClick={onClose}>
               Login
-            </Link>
-          )
+          </NavLink>
+          
         </nav>
       </div>
     </div>

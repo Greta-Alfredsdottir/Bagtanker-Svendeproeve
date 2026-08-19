@@ -1,51 +1,70 @@
-
 .drawerOverlay {
   position: fixed;
   inset: 0;
-  background: rgba(0, 0, 0, 0.5);
-  z-index: 100;
+  z-index: 1000;
+
   display: flex;
   justify-content: flex-end;
+
+  background: transparent;
 }
 
 .drawer {
-  width: 280px;
-  height: 100%;
-  background: #ffffff;
-  padding: 1.5rem;
+  width: 90%;
+  height: calc(100% - 4rem);
+
+  margin-top: 2rem;
+  margin-right: 2rem;
+
+  background-color: #4a4c56;
+
+  padding: 3rem 5rem;
+  box-sizing: border-box;
+
   display: flex;
   flex-direction: column;
 }
 
 .drawerHeader {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
-  margin-bottom: 2rem;
+
+  margin-bottom: 4rem;
 
   h2 {
-    margin: 0;
-    font-size: 1.25rem;
+    display: none;
   }
 }
 
 .closeBtn {
   background: none;
   border: none;
-  font-size: 1.25rem;
+
+  color: white;
+  font-size: 3rem;
+  font-weight: 200;
+
   cursor: pointer;
+
+  line-height: 1;
+
+  &:hover {
+    opacity: 0.7;
+  }
 }
 
 .drawerNav {
   display: flex;
   flex-direction: column;
-  gap: 1.25rem;
+  gap: 1.8rem;
 
   a {
-    color: #1f2937;
+    color: white;
     text-decoration: none;
-    font-size: 1.1rem;
-    font-weight: 500;
+
+    font-size: 1.4rem;
+    font-weight: 400;
 
     &:hover {
       color: #d97706;

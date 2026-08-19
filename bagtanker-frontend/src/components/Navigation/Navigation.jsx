@@ -33,7 +33,7 @@ export function Navigation() {
         </li>
 
         <li>
-          <input type="search" placeholder="søg" />
+          <input type="search" placeholder="søg"/>
           <button>Søg</button>
         </li>
       </ul>
@@ -41,8 +41,7 @@ export function Navigation() {
       <button
         className={style.burgerBtn}
         onClick={() => setIsMenuOpen(true)}
-        aria-label="Åbn menu"
-      >
+        aria-label="Åbn menu">
         <span className={style.burgerIcon}></span>
         <span className={style.burgerIcon}></span>
         <span className={style.burgerIcon}></span>
@@ -51,8 +50,7 @@ export function Navigation() {
       <BurgerMenu
         isOpen={isMenuOpen}
         onClose={() => setIsMenuOpen(false)}
-        isLoggedIn={isLoggedIn}
-      />
+        isLoggedIn={isLoggedIn}/>
     </nav>
   );
 }
