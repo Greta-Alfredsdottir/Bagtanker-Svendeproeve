@@ -1,4 +1,3 @@
-// import { EstateCard } from "../Components/estateCard/EstateCard";
 import { Slider } from "../Components/slider/slider";
 import { useFetch } from "../hooks/useFetch";
 import { ProductCard } from "../productCard/ProductCard";
@@ -14,7 +13,7 @@ export function FrontPage(){
         
     return(
         <>
-        <Slider />;
+        <Slider />
         {data?.map((item) =>{
 
             return (
