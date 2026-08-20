@@ -1,19 +1,20 @@
 # Bagtanker-Svendeproeve
 Bagtanker - Svendeprøve - Prisma
 
-Opgavens navn
-Dit navn og holdnummer
-URL til GitHub repository
-Supabase URL og KEY til .env fil
-Eventuelt brugernavn og adgangskode
+Asthildur Greta Alfresdottir
+h1we080125
+https://github.com/Greta-Alfredsdottir/Bagtanker-Svendeproeve
 
 
 Vurdering af egen indsats og gennemførelse af prøven.
     Mandag: Projekt-setup og arkitektur. startet at kode lidt.
-    Tirsdag:
-    Onsdag:
-    Torsdag:
-    Fredag: 
+    Tirsdag: brud sammen
+    Onsdag: prøve at code lidt mere, fik hjælp af Jack
+    Torsdag: prøvede lidt mere
+    Fredag: afleverede en meget dårlig opgave, det er min ejen skyld
+
+
+    
 Argumentation for de valg du har truffet under løsningen af opgaven.
 Redegørelse for oprindelsen af de forskellige kodeelementer i prøven.
 Fremhævelse af eventuelle særlige punkter til bedømmelse.
